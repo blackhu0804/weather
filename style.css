@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul,ol{
+  list-style: none;
+}
+#weather {
+  margin: 20px auto;
+  width: 600px;
+  background-image: url('');
+  background-size: cover;
+  border-radius: 20px;
+  background-color: #ccc;
+}
+.main {
+  padding: 60px;
+  height: 420px;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
+.time{
+  padding-bottom: 5px;
+}
+.time>span{
+  font-size: 50px;
+  text-shadow: 0 3px 1px black;
+  color: white;
+}
+.city {
+  text-shadow: 0 1px 1px black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0);
+  border:none;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  transition: border-radius .5s,padding .5s;
+}
+.city:hover{
+  padding: 8px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 99px;
+  font-size: 30px;
+  transition: border-radius .5s,padding .5s,font-size .5s,background-color .5s;
+}
+.cityError {
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 6px ;
+  display: none;
+  background: rgba(200,0,0,.9);
+  padding: 5px;
+  border-radius: 99px;
+}
+.weather-text {
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 1px black;
+}
+.weather-basic>li{
+  margin-bottom: 25px;
+}
+.weather-basic>li span{
+  background-color: rgba(0, 0, 0, .8);
+  padding: 5px 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#weather .footer{
+  padding: 24px;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+.footer>ul{
+  display: flex;
+}
+.footer>ul>li{
+  height: 140px;
+  text-align: center;
+  margin-left: 15px;
+}
+.footer .today-weather {
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .today-weather img{
+  width: 100px;
+  height: 100px;
+}
+.footer .today-weather .temp {
+  margin-top: 20px;
+}
+.footer .future {
+  width: 100px;
+}
+.footer .future img{
+  margin: 15px 0;
+  width: 60px;
+  height: 60px;
+}
+.footer li .week{
+  font-size: 16px;
+  display: inline-block;
+  background-color: #000;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.footer li .temp{
+  font-size: 20px;
+}
