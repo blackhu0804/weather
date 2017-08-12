@@ -70,9 +70,9 @@ $(function(){
           }
 
           $('.weather-text').text(data.now.cond.txt)
-
+          
+          //如果nodeValue的值为null,则对它赋值也不会有任何效果.
           $('.weather-basic p').eq(0).contents()[1].nodeValue = data.aqi.city.pm10
-          console.log(data.aqi.city.pm10)
           $('.weather-basic p').eq(1).contents()[1].nodeValue = data.aqi.city.pm25
           $('.weather-basic p').eq(2).contents()[1].nodeValue = data.aqi.city.qlty
         })
